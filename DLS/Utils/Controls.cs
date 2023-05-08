@@ -115,6 +115,10 @@ namespace DLS.Utils
                             return false;
                     }
                 case DLSControls.LIGHT_TOGGLE:
+                    if (Game.IsControllerButtonDownRightNow(ControllerButtons.A) 
+                        && Game.IsControllerButtonDown(ControllerButtons.DPadLeft))
+                        return true;
+
                     switch (Settings.GEN_MODIFIER)
                     {
                         case Keys.Shift:

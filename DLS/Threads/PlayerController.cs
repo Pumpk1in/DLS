@@ -212,7 +212,6 @@ namespace DLS.Threads
                                 }
                                 else if (Controls.IsDLSControlDown(DLSControls.LIGHT_TOGGLE))
                                 {
-                                    
                                     Lights.MoveUpStage(activeVeh);
                                 }
                                 else if (Controls.IsDLSControlDown(DLSControls.LIGHT_TADVISOR)
